@@ -1,0 +1,22 @@
+type: choice
+is_multiple_choice: true
+options:
+  - text: The Dog object cannot be assigned to an Animal reference because Animal class
+      doesn&#x27;t implicitly extend the Object class.
+  - text: "Even though not explicitly written, both Animal and Dog classes are subclasses\
+    \ of the Object class and inherit its methods."
+  - text: "The Dog class explicitly states that it extends the Animal class, meaning\
+    \ it cannot indirectly be a subclass of the Object class."
+  - text: "The Dog object can be assigned to an Animal reference because every class\
+    \ in Java implicitly extends the Object class, and it is permitted to assign a\
+    \ subclass object to a superclass reference."
+  - text: The statement `Animal a = new Dog();` is incorrect because the Dog class does
+      not explicitly extend the Object class.
+files:
+  - name: src/Task.java
+    visible: true
+    learner_created: false
+feedback_link: https://hyperskill.org/learn/step/30503#comment
+status: Solved
+record: -1
+local_check: false

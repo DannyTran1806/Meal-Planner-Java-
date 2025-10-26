@@ -1,0 +1,15 @@
+type: choice
+is_multiple_choice: true
+options:
+  - text: It's impossible to create an instance of the <b>Object</b> class.
+  - text: The class is the root of the class hierarchy in Java.
+  - text: Your custom classes do not inherit <b>Object</b>.
+  - text: All objects including arrays have methods of this class.
+files:
+  - name: src/Task.java
+    visible: true
+    learner_created: false
+feedback_link: https://hyperskill.org/learn/step/2307#comment
+status: Solved
+record: -1
+local_check: false
