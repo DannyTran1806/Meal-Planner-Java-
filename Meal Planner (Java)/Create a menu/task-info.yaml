@@ -21,6 +21,12 @@ files:
   - name: src/mealplanner/util/Parsers.java
     visible: true
     learner_created: true
+  - name: src/mealplanner/repo/MealRepository.java
+    visible: true
+    learner_created: true
+  - name: src/mealplanner/repo/InMemoryMealRepository.java
+    visible: true
+    learner_created: true
 feedback_link: https://hyperskill.org/projects/318/stages/1784/implement#comment
 status: Unchecked
 record: 2
