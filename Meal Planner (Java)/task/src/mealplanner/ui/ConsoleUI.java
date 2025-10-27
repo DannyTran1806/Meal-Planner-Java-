@@ -26,17 +26,28 @@ public class ConsoleUI {
         }
         System.out.println("Input the meal's name:");
         String mealName = input.nextLine().trim();
-        while (!mealName.matches("[a-zA-Z]+")){
+        while (!mealName.matches("[a-zA-Z ]+")){
             System.out.println("Wrong format. Use letters only!");
             mealName = input.nextLine().trim();
         }
         System.out.println("Input the ingredients:");
-        String ingredientList = input.nextLine().trim();
-        while (!ingredientList.matches("[a-zA-Z]+")){
-            System.out.println("Wrong format. Use letters only!");
-            ingredientList = input.nextLine().trim();
+        String[] ingredients =  null;
+        boolean exit = false;
+        while(!exit){
+            String ingredientList = input.nextLine().trim();
+            ingredients = splitCommaTrim(ingredientList);
+            for (String ingredient : ingredients){
+                if(ingredientList.endsWith(",") || ingredient.isEmpty() || !ingredient.matches("[a-zA-Z ]+")){
+                    exit = false;
+                    break;
+                }else {
+                    exit = true;
+                }
+            }
+            if(!exit){
+                System.out.println("Wrong format. Use letters only!");
+            }
         }
-        String[] ingredients = splitCommaTrim(ingredientList);
         System.out.println("The meal has been added!");
 
         //TODO: save the meals in InMemoryRepository
