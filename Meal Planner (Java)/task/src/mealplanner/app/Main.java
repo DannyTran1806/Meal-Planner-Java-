@@ -9,7 +9,9 @@ import java.util.Scanner;
 public class Main {
   public static void main(String[] args) {
       MealService service = new MealService(new InMemoryMealRepository());
-      ConsoleUI ui = new ConsoleUI(service);
+      Scanner input = new Scanner(System.in);
+      ConsoleUI ui = new ConsoleUI(service, input);
+
       ui.menu();
   }
 }
