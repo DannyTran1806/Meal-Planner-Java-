@@ -1,14 +1,35 @@
 type: edu
 files:
-  - name: src/mealplanner/Main.java
+  - name: build.gradle
     visible: true
     learner_created: false
-  - name: build.gradle
+  - name: src/mealplanner/app/Main.java
+    visible: true
+    learner_created: false
+  - name: src/mealplanner/domain/Meal.java
+    visible: true
+    learner_created: false
+  - name: src/mealplanner/service/MealService.java
+    visible: true
+    learner_created: false
+  - name: src/mealplanner/ui/ConsoleUI.java
+    visible: true
+    learner_created: false
+  - name: src/mealplanner/util/Parsers.java
+    visible: true
+    learner_created: false
+  - name: src/mealplanner/repo/MealRepository.java
+    visible: true
+    learner_created: false
+  - name: src/mealplanner/repo/InMemoryMealRepository.java
     visible: true
     learner_created: false
   - name: test/MealPlannerTests.java
     visible: false
     learner_created: false
+  - name: src/mealplanner/Main.java
+    visible: true
+    learner_created: true
 feedback_link: https://hyperskill.org/projects/318/stages/1785/implement#comment
 status: Unchecked
 record: -1
